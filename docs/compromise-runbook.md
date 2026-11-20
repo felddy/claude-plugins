@@ -191,8 +191,9 @@ exposed.
 Verify these hold *before* they're needed; each play assumes them.
 
 - [ ] Branch protection on `main`: pull request required, no direct
-      pushes.
-- [ ] CODEOWNERS covers `.claude-plugin/`.
+      pushes. Rulesets are code in `.github/rulesets/`; apply with
+      `make apply-ruleset`.
+- [ ] CODEOWNERS covers `.claude-plugin/` (`.github/CODEOWNERS`).
 - [ ] 2FA on the owning account; collaborator list minimal.
 - [ ] Renovate pin bumps are reviewed, never auto-merged; the diff to
       review is two lines — `ref` and `sha` — against the plugin
