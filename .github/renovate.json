@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Bump pinned plugin releases in the marketplace catalog",
+      "managerFilePatterns": ["/^\\.claude-plugin/marketplace\\.json$/"],
+      "matchStrings": [
+        "\"repo\": \"(?<depName>[^\"]+)\",\\s*\"ref\": \"(?<currentValue>v[^\"]+)\",\\s*\"sha\": \"(?<currentDigest>[a-f0-9]{40})\""
+      ],
+      "datasourceTemplate": "github-tags"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "felddy",
+  "description": "Plugins from felddy — Claudeaux, a swamp-seasoned Claude persona, and friends. Every entry is pinned to a reviewed commit.",
+  "owner": {
+    "name": "Mark Feldhousen",
+    "url": "https://github.com/felddy"
+  },
+  "plugins": [
+    {
+      "name": "claudeaux",
+      "description": "Claudeaux: a swamp-seasoned Claude persona and GitHub collaboration conventions — voice, review workflow, and GitHub App identity helpers.",
+      "source": {
+        "source": "github",
+        "repo": "felddy/claudeaux-claude-plugin",
+        "ref": "v0.1.0",
+        "sha": "f0110d9bc764b237acb569e661c662289d98a09d"
+      }
+    }
+  ]
+}
