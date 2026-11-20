@@ -11,5 +11,9 @@
       ],
       "datasourceTemplate": "github-tags"
     }
-  ]
+  ],
+  "pre-commit": {
+    "description": "Hook revisions here are hand-managed, not synced from a central base; let Renovate bump them",
+    "enabled": true
+  }
 }
